@@ -1,6 +1,6 @@
 # Pipes & Beans - Amsterdan Colombian Coffee
 
-A modern, artistic website for Pipes & Beans coffee shop located in Amsterdam.
+A modern, artistic website for Pipes & Beans cafe located in Amsterdam.
 
 ## 🌟 Live Website
 Visit the website at: https://alaa-nl.github.io/Pipes-peans/
@@ -20,7 +20,6 @@ Pipes & Beans is a relaxed cafe and local hangout in Amsterdam, offering special
 **Address:** Rietwijkerstraat 35, 1059 VW Amsterdam
 **Phone:** 06 36166394
 **Hours:** Daily 8:30 AM - 5:00 PM
-**Rating:** ⭐ 4.7 (484 reviews)
 
 ## 🛠 Technologies Used
 - HTML5
