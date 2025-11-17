@@ -1,4 +1,4 @@
-# Pipes & Beans - Amsterdam Coffee Shop
+# Pipes & Beans - Amsterdan Colombian Coffee
 
 A modern, artistic website for Pipes & Beans coffee shop located in Amsterdam.
 
