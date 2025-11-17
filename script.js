@@ -101,6 +101,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start auto-play
     setInterval(autoPlay, 5000);
 
+    // Hamburger menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+    }
+
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -116,12 +143,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Add scroll effect to navbar
+    const navbar = document.querySelector('.navbar');
+    // Set initial background
+    navbar.style.background = '#ff6b35';
+
     window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            navbar.style.background = 'rgba(255, 107, 53, 0.98)';
         } else {
-            navbar.style.background = 'linear-gradient(to bottom, rgba(10, 10, 10, 0.95), transparent)';
+            navbar.style.background = '#ff6b35';
         }
     });
 
